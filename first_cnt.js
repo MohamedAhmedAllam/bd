@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateCountdown = () => {
         const now = new Date();
         const midnight = new Date(now);
-        midnight.setHours(20, 25, 0, 0);
+        midnight.setHours(24, 0, 0, 0);
         const timeRemaining = midnight - now;
 
         if (timeRemaining <= 0) {
