@@ -3,9 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateCountdown = () => {
         const now = new Date();
-        const midnight = new Date(now);
-        midnight.setHours(16, 0, 0, 0);
-        const timeRemaining = midnight - now;
+        const tomorrow = new Date(now);
+        tomorrow.setDate(now.getDate() + 1);
+        tomorrow.setHours(16, 0, 0, 0);
+        const timeRemaining = tomorrow - now;
         const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
