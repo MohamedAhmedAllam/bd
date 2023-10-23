@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateCountdown = () => {
         const now = new Date();
         const midnight = new Date(now);
-        midnight.setHours(24, 0, 0, 0);
+        midnight.setHours(20, 19, 0, 0);
         const timeRemaining = midnight - now;
 
         if (timeRemaining <= 0) {
             // Redirect to the new page when countdown reaches zero
-            window.location.href = 'index.html'; // Change 'images.html' to the name of your second HTML file
+            window.location.href = 'index_next.html'; // Change 'images.html' to the name of your second HTML file
             return;
         }
 
