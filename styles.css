@@ -61,6 +61,29 @@ body, html {
 }
 
 
+/* Mobile styles */
+@media (max-width: 600px) {
+    #hbd {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+
+    .heart {
+        font-size: 10px; /* Adjust the heart size for smaller screens */
+    }
+
+    #images img {
+        width: 50px; /* Adjust the image size for smaller screens */
+        margin: 10px 30px;
+    }
+    #t {
+    font-size: 20px; 
+    }
+    #countdown {
+    font-size: 20px; /* Adjust as needed */
+    }
+}
+
+
 
 /* Mobile styles */
 @media (max-width: 1500px) {
@@ -83,6 +106,7 @@ body, html {
     font-size: 30px; /* Adjust as needed */
     }
 }
+
 
 
 
