@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-        countdownEl.innerHTML = `See you in ${hours}h ${minutes}m ${seconds}s`;
+        countdownEl.innerHTML = `See you in ${hours}h ${minutes}m ${seconds}s (No Excuses)`;
     };
 
     updateCountdown();
